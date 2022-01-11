@@ -1,6 +1,4 @@
-import React from "react";
-// import { ReactComponent as OvalLogo } from "../assets/Oval.svg";
-// import { ReactComponent as DesignoLogo } from "../assets/DESIGNO.svg";
+import React, { useState } from "react";
 import "../Styles/menu-styles.css";
 
 function Header() {
@@ -19,20 +17,20 @@ function Header() {
 				</div>
 			</div>
 
-			<nav className="nav">
+			<nav className="hide-menu">
 				<ul className="nav-list">
 					<li>
-						<a className="nav-link" href="#">
+						<a className="nav-link" href="#x">
 							OUR COMPANY
 						</a>
 					</li>
 					<li>
-						<a className="nav-link" href="#">
+						<a className="nav-link" href="#x">
 							LOCATIONS
 						</a>
 					</li>
 					<li>
-						<a className="nav-link" href="#">
+						<a className="nav-link" href="#x">
 							CONTACT
 						</a>
 					</li>
