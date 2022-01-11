@@ -24,7 +24,7 @@ function Header() {
 				</div>
 			</div>
 
-			<nav className="hide-menu">
+			<nav className={isOpen && "hide-menu"}>
 				<ul className="nav-list">
 					<li>
 						<a className="nav-link" href="#x">
