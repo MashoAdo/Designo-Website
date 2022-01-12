@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../Styles/menu-styles.css";
+import "../Styles/header-styles.css";
+import "../Styles/reusable-styles.css";
 
 function Header() {
 	// open/close menu
