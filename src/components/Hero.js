@@ -1,6 +1,6 @@
 import React from "react";
-import "../Styles/reusable-styles.css";
 import "../Styles/hero-styles.css";
+import "../Styles/reusable-styles.css";
 import { ReactComponent as Phone } from "../assets/phone.svg";
 
 function Hero() {
