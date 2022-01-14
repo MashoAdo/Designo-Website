@@ -1,0 +1,57 @@
+/* VARIABLES */
+
+// Primary Colors
+$peach: rgb(231, 120, 107);
+$black: rgb(29, 28, 30);
+$white: rgb(255, 255, 255);
+
+// Secondary Colors
+$light-peach: rgb(255, 173, 155);
+$dark-grey: rgb(51, 49, 54);
+$light-grey: rgb(251, 243, 245);
+
+// mixins
+@mixin button($textColor, $backgroundColor) {
+	padding: 18px 24px;
+	border: none;
+	border-radius: 8px;
+	align-self: center;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	transition: 400ms ease;
+
+	&:hover {
+		color: $textColor;
+		background: $backgroundColor;
+	}
+}
+
+// fonts
+
+h1 {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 48px;
+}
+
+h2 {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 36px;
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+	word-spacing: 5;
+}
+
+p {
+	font-weight: 400;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 25px;
+}
