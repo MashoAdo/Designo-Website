@@ -7,17 +7,40 @@ $white: rgb(255, 255, 255);
 // Secondary Colors
 $light-peach: rgb(255, 173, 155);
 
+// mixins
+@mixin button($textColor, $backgroundColor) {
+	padding: 18px 24px;
+	border: none;
+	border-radius: 8px;
+	align-self: center;
+	font-family: Jost;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	transition: 400ms ease;
+
+	&:hover {
+		color: $textColor;
+		background: $backgroundColor;
+	}
+}
+
 .hero-section {
-	background: $peach url("../assets/shared/desktop/bg-pattern-small-circle.svg");
+	background: $peach url("../assets/home/desktop/bg-pattern-hero-home.svg");
 	background-size: 640px 640px;
 	background-repeat: no-repeat;
-	background-position: right bottom;
+	background-position: left bottom;
 	padding: 80px 24px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	// overflow: hidden;
+
+	button {
+		margin: 24px 0 80px;
+		@include button($white, $light-peach);
+	}
 }
 
 .hero-content {
@@ -26,25 +49,4 @@ $light-peach: rgb(255, 173, 155);
 }
 .hero-header {
 	margin-bottom: 24px;
-}
-
-button {
-	padding: 18px 24px;
-	margin: 24px 0 80px;
-	border-radius: 8px;
-	border: none;
-	align-self: center;
-	font-family: Jost;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 15px;
-	line-height: 22px;
-	/* identical to box height */
-	letter-spacing: 1px;
-	transition: 400ms ease;
-
-	&:hover {
-		color: $white;
-		background: $light-peach;
-	}
 }
