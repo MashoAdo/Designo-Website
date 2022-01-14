@@ -16,9 +16,7 @@ function Hero() {
 					Find out more about our services.
 				</p>
 			</div>
-			<button>LEARN MORE</button>
-
-			{/* <div className="phone-img"></div> */}
+			<button className="light-button">LEARN MORE</button>
 			<Phone />
 		</div>
 	);
