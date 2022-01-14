@@ -1,0 +1,60 @@
+// Primary Colors
+$peach: rgb(231, 120, 107);
+$black: rgb(29, 28, 30);
+$white: rgb(255, 255, 255);
+
+// Secondary Colors
+$light-peach: rgb(255, 173, 155);
+
+@mixin button($textColor, $backgroundColor) {
+	padding: 18px 24px;
+	border: none;
+	border-radius: 8px;
+	align-self: center;
+	font-family: Jost;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	transition: 400ms ease;
+
+	&:hover {
+		color: $textColor;
+		background: $backgroundColor;
+	}
+}
+
+//CTA Styles
+
+.call-to-action-container {
+	background: $peach
+		url("../assets/shared/desktop/bg-pattern-call-to-action.svg");
+	background-size: cover;
+	margin: 0 24px;
+	padding: 64px 24px;
+	text-align: center;
+	border-radius: 8px;
+	position: relative;
+	bottom: -190px;
+	button {
+		@include button($white, $light-peach);
+	}
+}
+
+.call-to-action {
+	margin-bottom: 32px;
+	color: $white;
+
+	h3 {
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 36px;
+		margin-bottom: 15px;
+	}
+
+	p {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 25px;
+	}
+}
