@@ -1,8 +1,8 @@
 import React from "react";
 import "../Styles/qualities.css";
-import { ReactComponent as Passionate } from "../assets/passionate.svg";
-import { ReactComponent as Resourceful } from "../assets/friendly.svg";
-import { ReactComponent as Friendly } from "../assets/resourceful.svg";
+import { ReactComponent as Passionate } from "../assets/home/desktop/illustration-passionate.svg";
+import { ReactComponent as Resourceful } from "../assets/home/desktop/illustration-friendly.svg";
+import { ReactComponent as Friendly } from "../assets/home/desktop/illustration-resourceful.svg";
 
 function Qualities() {
 	return (
@@ -20,7 +20,8 @@ function Qualities() {
 			</div>
 
 			<div className="qualities-item">
-				<Resourceful />
+				<Friendly />
+
 				<div>
 					<h3>RESOURCEFUL</h3>
 					<p>
@@ -32,7 +33,7 @@ function Qualities() {
 			</div>
 
 			<div className="qualities-item">
-				<Friendly />
+				<Resourceful />
 				<div>
 					<h3>FRIENDLY</h3>
 					<p>
