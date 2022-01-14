@@ -1,0 +1,64 @@
+/* VARIABLES */
+
+// Primary Colors
+$black: rgb(29, 28, 30);
+$white: rgb(255, 255, 255);
+
+.footer-information {
+	background-color: $black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 254px 24px 64px;
+	color: $white;
+}
+
+.dark-logo {
+	width: 202px;
+	height: 27px;
+}
+
+.footer-top {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.line-separator-one {
+	height: 1px;
+	background: $white;
+	opacity: 0.1;
+	margin: 32px 0;
+}
+
+.footer-link {
+	font-size: 14px;
+	line-height: 14px;
+	/* identical to box height, or 100% */
+	letter-spacing: 2px;
+	a {
+		color: $white;
+	}
+	&:not(:last-child) {
+		margin-bottom: 32px;
+	}
+}
+
+.address-contacts {
+	div {
+		margin-bottom: 40px;
+		font-size: 16px;
+		line-height: 26px;
+		/* or 162% */
+		color: $white;
+		mix-blend-mode: normal;
+		opacity: 0.5;
+	}
+}
+
+.socials {
+	a:not(:last-child) {
+		margin-right: 16px;
+	}
+}
