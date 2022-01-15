@@ -9,13 +9,14 @@ $white: rgb(255, 255, 255);
 	width: 100%;
 	left: 0px;
 	top: 0px;
+	padding: 35px 24px;
 }
 
 .logo-menuBtn {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 35px 24px;
+	// margin: 35px 0;
 }
 
 // LOGOs
@@ -121,4 +122,51 @@ a {
 	/* identical to box height, or 104% */
 	letter-spacing: 2px;
 	color: $white;
+}
+
+// MEDIA QUERIES
+@media screen and (min-width: 650px) {
+	.header-section {
+		padding: 35px 40px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.header-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#menu-btn {
+		display: none;
+	}
+
+	nav {
+		position: relative;
+		transform: translateX(0);
+		background: $white;
+	}
+
+	.nav-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+
+		li:not(:last-child) {
+			margin-bottom: 0;
+			margin-right: 42px;
+		}
+	}
+
+	.nav-link {
+		font-size: 14px;
+		line-height: 14px;
+
+		/* identical to box height, or 104% */
+		letter-spacing: 2px;
+		color: $black;
+	}
 }

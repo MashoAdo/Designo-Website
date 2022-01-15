@@ -34,8 +34,8 @@ $light-peach: rgb(255, 173, 155);
 	padding: 64px 24px;
 	text-align: center;
 	border-radius: 8px;
-	position: relative;
-	bottom: -190px;
+	position: absolute;
+	top: -190px;
 	button {
 		@include button($white, $light-peach);
 	}
@@ -56,5 +56,13 @@ $light-peach: rgb(255, 173, 155);
 		font-weight: 400;
 		font-size: 13px;
 		line-height: 25px;
+	}
+}
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 650px) {
+	.call-to-action-container {
+		margin: 0 40px;
 	}
 }

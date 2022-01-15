@@ -30,8 +30,7 @@ $light-peach: rgb(255, 173, 155);
 	background: $peach url("../assets/home/desktop/bg-pattern-hero-home.svg");
 	background-size: 640px 640px;
 	background-repeat: no-repeat;
-	background-position: left bottom;
-	padding: 80px 24px 0;
+	background-position: right bottom;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -46,7 +45,21 @@ $light-peach: rgb(255, 173, 155);
 .hero-content {
 	color: $white;
 	text-align: center;
+	margin: 80px 24px 0;
 }
 .hero-header {
 	margin-bottom: 24px;
+}
+
+// MEDIA QUERIES
+@media screen and (min-width: 650px) {
+	.hero-section {
+		margin: 0 40px 0;
+		border-radius: 8px;
+	}
+
+	.hero-content {
+		margin: 60px 58px 0;
+		padding: 0 50px;
+	}
 }

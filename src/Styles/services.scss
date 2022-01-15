@@ -53,3 +53,9 @@ $black: rgb(29, 28, 30);
 	margin-left: 10px;
 	transition: 400ms ease;
 }
+
+@media screen and (min-width: 650px) {
+	.services-section {
+		padding: 120px 40px;
+	}
+}
