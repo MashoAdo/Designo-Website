@@ -4,7 +4,8 @@ import FooterInformation from "./FooterInformation";
 
 function Footer() {
 	return (
-		<footer>
+		// relative position on the footer component to absolutely postion the <CallToActionComponent />
+		<footer style={{ position: "relative" }}>
 			<CallToActionComponent />
 			<FooterInformation />
 		</footer>
