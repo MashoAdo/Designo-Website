@@ -7,15 +7,14 @@ $white: rgb(255, 255, 255);
 $light-peach: rgb(255, 173, 155);
 
 @mixin button($textColor, $backgroundColor) {
-	padding: 18px 24px;
-	border: none;
-	border-radius: 8px;
-	align-self: center;
 	font-family: Jost;
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 22px;
 	letter-spacing: 1px;
+	padding: 18px 24px;
+	border: none;
+	border-radius: 8px;
 	transition: 400ms ease;
 
 	&:hover {
@@ -30,12 +29,17 @@ $light-peach: rgb(255, 173, 155);
 	background: $peach
 		url("../assets/shared/desktop/bg-pattern-call-to-action.svg");
 	background-size: cover;
-	margin: 0 24px;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -190px;
 	padding: 64px 24px;
+	margin: 0 24px;
 	text-align: center;
 	border-radius: 8px;
-	position: absolute;
-	top: -190px;
+
 	button {
 		@include button($white, $light-peach);
 	}
@@ -64,5 +68,34 @@ $light-peach: rgb(255, 173, 155);
 @media screen and (min-width: 650px) {
 	.call-to-action-container {
 		margin: 0 40px;
+		padding: 57px 59px;
+		text-align: start;
+		h3 {
+			// add line break
+			.line-breaker::after {
+				content: "\a";
+				white-space: pre;
+			}
+		}
+		p {
+			// add line break
+			.line-breaker::after {
+				content: "\a";
+				white-space: pre;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.call-to-action-container {
+		margin: 0 95px;
+	}
+
+	.call-to-action-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
