@@ -6,7 +6,7 @@ import { ReactComponent as Youtube } from "../assets/shared/desktop/icon-youtube
 import { ReactComponent as Twitter } from "../assets/shared/desktop/icon-twitter.svg";
 import { ReactComponent as Pinterest } from "../assets/shared/desktop/icon-pinterest.svg";
 import { ReactComponent as Instagram } from "../assets/shared/desktop/icon-instagram.svg";
-// designo-webapp\src\assets\shared\desktop\icon-facebook.svg
+
 function FooterInformation() {
 	return (
 		<div className="footer-information">
@@ -26,6 +26,8 @@ function FooterInformation() {
 					</li>
 				</ul>
 			</div>
+
+			<div className="line-separator-two"></div>
 
 			<div className="footer-bottom">
 				<div className="address-contacts">
