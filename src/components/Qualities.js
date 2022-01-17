@@ -6,9 +6,9 @@ import { ReactComponent as Friendly } from "../assets/home/desktop/illustration-
 
 function Qualities() {
 	return (
-		<div className="qualities">
+		<div className="qualities-section">
 			<div className="qualities-item">
-				<Passionate />
+				<Passionate className="qualities-icon" />
 				<div>
 					<h3>PASSIONATE</h3>
 					<p>
@@ -20,7 +20,7 @@ function Qualities() {
 			</div>
 
 			<div className="qualities-item">
-				<Friendly />
+				<Friendly className="qualities-icon" />
 
 				<div>
 					<h3>RESOURCEFUL</h3>
@@ -33,7 +33,7 @@ function Qualities() {
 			</div>
 
 			<div className="qualities-item">
-				<Resourceful />
+				<Resourceful className="qualities-icon" />
 				<div>
 					<h3>FRIENDLY</h3>
 					<p>
