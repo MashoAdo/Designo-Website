@@ -16,6 +16,7 @@ function Header() {
 				</div>
 
 				<div
+					id="menu-btn"
 					className={isOpen ? "menu-btn close-btn" : "menu-btn"}
 					onClick={toggle}
 				>
