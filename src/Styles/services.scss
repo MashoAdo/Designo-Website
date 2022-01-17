@@ -8,17 +8,20 @@ $black: rgb(29, 28, 30);
 }
 
 .service-item {
-	padding: 90px 56px;
-	margin-bottom: 24px;
-	background-size: cover;
-	box-shadow: inset 0 0 0 150px rgba(29, 28, 30, 0.7);
-	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
 	text-transform: uppercase;
 	color: $white;
+	padding: 80px 36px;
+	margin-bottom: 24px;
+	background-size: cover;
+	box-shadow: inset 0 0 0 350px rgba(29, 28, 30, 0.7);
+	border-radius: 15px;
 	transition: 400ms ease;
 	&:hover {
-		box-shadow: inset 0 0 0 150px rgba(231, 120, 107, 0.7);
+		box-shadow: inset 0 0 0 350px rgba(231, 120, 107, 0.7);
 	}
 	&:hover .right-icon {
 		margin-left: 17px;
@@ -28,9 +31,8 @@ $black: rgb(29, 28, 30);
 .service-title {
 	font-style: normal;
 	font-weight: 500;
-	font-size: 20px;
-	line-height: 36px;
-	/* identical to box height, or 129% */
+	font-size: 40px;
+	line-height: 48px;
 	text-align: center;
 	letter-spacing: 1.4px;
 }
@@ -44,7 +46,6 @@ $black: rgb(29, 28, 30);
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 22px;
-	/* identical to box height */
 	letter-spacing: 5px;
 	text-transform: uppercase;
 }
@@ -57,5 +58,29 @@ $black: rgb(29, 28, 30);
 @media screen and (min-width: 650px) {
 	.services-section {
 		padding: 120px 40px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.services-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 20px;
+
+		:first-child {
+			grid-column: 1/2;
+			grid-row: 1/3;
+		}
+	}
+
+	.service-item {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.services-section {
+		padding: 160px 95px;
 	}
 }
