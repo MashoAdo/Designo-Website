@@ -26,17 +26,17 @@ $light-peach: rgb(255, 173, 155);
 //CTA Styles
 
 .call-to-action-container {
-	background: $peach
-		url("../assets/shared/desktop/bg-pattern-call-to-action.svg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 	position: absolute;
 	left: 0;
 	right: 0;
 	top: -190px;
 	padding: 64px 24px;
 	margin: 0 24px;
+	background: $peach
+		url("../assets/shared/desktop/bg-pattern-call-to-action.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	text-align: center;
 	border-radius: 8px;
 
@@ -69,7 +69,7 @@ $light-peach: rgb(255, 173, 155);
 	.call-to-action-container {
 		margin: 0 40px;
 		padding: 57px 59px;
-		text-align: start;
+		text-align: center;
 		h3 {
 			// add line break
 			.line-breaker::after {
@@ -97,5 +97,6 @@ $light-peach: rgb(255, 173, 155);
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		text-align: start;
 	}
 }
