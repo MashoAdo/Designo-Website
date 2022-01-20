@@ -1,0 +1,36 @@
+/* VARIABLES */
+.intro {
+  background: #e7786b url("../assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-size: cover;
+  padding: 105px 24px;
+  text-align: center;
+  color: white;
+}
+
+.web-design-intro-title {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 500px) {
+  .line-break::after {
+    content: "\a";
+    white-space: pre;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .intro {
+    margin: 0 40px;
+    background-image: url("../assets/web-design/desktop/bg-pattern-intro-web.svg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro {
+    margin: 0 95px;
+  }
+}
+/*# sourceMappingURL=WebDesignHero.css.map */
