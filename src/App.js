@@ -1,22 +1,52 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header.js";
-import Hero from "./components/Hero";
-import Qualities from "./components/Qualities.js";
-import Services from "./components/ServiceSection.js";
-import Footer from "./components/Footer.js";
+
+// home page
+import Header from "./homeComponents/Header.js";
+import Hero from "./homeComponents/Hero";
+import Qualities from "./homeComponents/Qualities.js";
+import Services from "./homeComponents/ServiceSection.js";
+import Footer from "./homeComponents/Footer.js";
+// secondary Pages
+import WebDesignPage from "./WebDesignPageComponents/WebDesignPage";
+import AppDesignPage from "./AppDesignPageComponents/AppDesignPage";
+import GraphicDesignPage from "./GraphicDesignPageComponents/GraphicDesignPage";
+import AboutPage from "./AboutPage/AboutPage";
+import LoactionPage from "./LocationPage/LoactionPage";
 
 function App() {
 	return (
-		<div className="app">
-			<Header />
-			<body>
-				<Hero />
-				<Services />
-				<Qualities />
-			</body>
-			<Footer />
-		</div>
+		<Router>
+			<>
+				<Header />
+
+				<Routes>
+					<Route
+						path="/"
+						element={
+							<body>
+								<Hero />
+								<Services />
+								<Qualities />
+							</body>
+						}
+					/>
+
+					<Route path="/webDesign" element={<WebDesignPage />} />
+
+					<Route path="/appDesign" element={<AppDesignPage />} />
+
+					<Route path="/graphicDesign" element={<GraphicDesignPage />} />
+
+					<Route path="/about" element={<AboutPage />} />
+
+					<Route path="/locations" element={<LoactionPage />} />
+				</Routes>
+
+				<Footer />
+			</>
+		</Router>
 	);
 }
 
