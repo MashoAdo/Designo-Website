@@ -16,7 +16,7 @@ $light-peach: rgb(255, 173, 155);
 }
 
 .project-item {
-	transition: 400ms ease-in;
+	transition: 400ms ease;
 	&:hover {
 		.project-info {
 			background-color: $peach;
