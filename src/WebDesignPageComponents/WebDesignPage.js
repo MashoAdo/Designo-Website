@@ -1,8 +1,5 @@
 import React from "react";
 
-// styles
-import "../WebDesignStyles/WebDesignProjects.css";
-
 // project component
 import WebDesignProjectItem from "./WebDesignProjectItem.js.js";
 
