@@ -1,5 +1,5 @@
 import React from "react";
-import "../WebDesignStyles/WebDesignHero.css";
+import "../Services-styles/WebDesignHero.css";
 
 function WebDesignHero() {
 	return (
