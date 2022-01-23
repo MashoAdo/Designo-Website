@@ -1,0 +1,125 @@
+/* VARIABLES */
+
+// Primary Colors
+$peach: rgb(231, 120, 107);
+$black: rgb(29, 28, 30);
+$white: rgb(255, 255, 255);
+
+// Secondary Colors
+$light-peach: rgb(255, 173, 155);
+$dark-grey: rgb(51, 49, 54);
+$light-grey: rgb(251, 243, 245);
+$very-light-peach: #fdf3f0;
+
+.locations-component-container {
+	margin-bottom: 310px;
+}
+
+.location-component:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.map {
+	height: 320px;
+
+	img {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.location-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background: $very-light-peach
+		url("../assets/shared/desktop/bg-pattern-two-circles.svg");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	padding: 80px 24px;
+
+	h2 {
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 36px;
+		color: $peach;
+		margin-bottom: 24px;
+	}
+}
+
+.address {
+	margin-bottom: 24px;
+
+	h3 {
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+	p {
+		font-size: 15px;
+		line-height: 25px;
+	}
+}
+
+.contact-location {
+	h3 {
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+	p {
+		font-size: 15px;
+		line-height: 25px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.map,
+	.location-details {
+		margin: 0 40px 24px;
+		border-radius: 15px;
+	}
+
+	.map {
+		img {
+			border-radius: 15px;
+		}
+	}
+	.location-details {
+		align-items: flex-start;
+		padding: 88px 74.5px;
+		text-align: start;
+	}
+
+	.location-details-wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.address {
+		margin-right: 30px;
+		width: 255px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.location-component {
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 0 95px 32px;
+		height: 326px;
+	}
+
+	.map {
+		margin: 0;
+		height: 100%;
+		width: 350px;
+	}
+	.location-details {
+		width: 730px;
+		margin: 0 30px 0 0;
+	}
+}

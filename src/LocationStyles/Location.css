@@ -1,0 +1,124 @@
+/* VARIABLES */
+.locations-component-container {
+  margin-bottom: 310px;
+}
+
+.location-component:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.map {
+  height: 320px;
+}
+
+.map img {
+  height: 100%;
+  width: 100%;
+}
+
+.location-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #fdf3f0 url("../assets/shared/desktop/bg-pattern-two-circles.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 80px 24px;
+}
+
+.location-details h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  color: #e7786b;
+  margin-bottom: 24px;
+}
+
+.address {
+  margin-bottom: 24px;
+}
+
+.address h3 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.address p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.contact-location h3 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.contact-location p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .map,
+  .location-details {
+    margin: 0 40px 24px;
+    border-radius: 15px;
+  }
+  .map img {
+    border-radius: 15px;
+  }
+  .location-details {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 88px 74.5px;
+    text-align: start;
+  }
+  .location-details-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .address {
+    margin-right: 30px;
+    width: 255px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .location-component {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin: 0 95px 32px;
+    height: 326px;
+  }
+  .map {
+    margin: 0;
+    height: 100%;
+    width: 350px;
+  }
+  .location-details {
+    width: 730px;
+    margin: 0 30px 0 0;
+  }
+}
+/*# sourceMappingURL=Location.css.map */
