@@ -1,0 +1,112 @@
+/* VARIABLES */
+
+// Primary Colors
+$peach: rgb(231, 120, 107);
+$black: rgb(29, 28, 30);
+$white: rgb(255, 255, 255);
+
+// Secondary Colors
+$light-peach: rgb(255, 173, 155);
+$dark-grey: rgb(51, 49, 54);
+$light-grey: rgb(251, 243, 245);
+$very-light-peach: #fdf3f0;
+
+.card-component {
+	padding: 72px 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background: $peach
+		url("../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+	background-size: cover;
+	// background-position: center;
+}
+
+.contact-intro {
+	color: $white;
+
+	h2 {
+		margin-bottom: 24px;
+	}
+
+	p {
+		margin-bottom: 60px;
+	}
+}
+
+form {
+	margin-bottom: 40px;
+	input,
+	textarea {
+		width: 100%;
+		background: none;
+		border: 1px solid $white;
+		// remove all border except the bottom border
+		border-width: 0 0 1px 0;
+		padding: 25px 0 11px 14px;
+		outline: none;
+		color: $white;
+		font-family: "Jost", sans-serif;
+	}
+
+	input::placeholder,
+	textarea::placeholder {
+		color: $white;
+		opacity: 0.5;
+		font-family: "Jost", sans-serif;
+	}
+}
+
+.submit-button {
+	font-family: Jost, sans-serif;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 8px;
+	align-self: center;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	transition: 400ms ease;
+
+	&:hover {
+		color: $white;
+		background: $light-peach;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.card-component {
+		margin: 0 40px;
+		padding: 71px 58px 151px;
+		background-image: url("../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+		background-position: -50% -50%;
+		background-repeat: no-repeat;
+		border-radius: 15px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.card-component {
+		margin: 0 95px;
+		padding: 54.5px 95px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		text-align: start;
+	}
+
+	.contact-intro {
+		width: 540px;
+		padding-right: 95px;
+	}
+
+	.form-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.submit-button {
+		align-self: center;
+	}
+}
