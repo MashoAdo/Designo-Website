@@ -39,10 +39,11 @@ $light-peach: rgb(255, 173, 155);
 	background-position: center;
 	text-align: center;
 	border-radius: 8px;
-
-	button {
-		@include button($white, $light-peach);
-	}
+}
+.cta-button {
+	color: $black;
+	background-color: $white;
+	@include button($white, $light-peach);
 }
 
 .call-to-action {
