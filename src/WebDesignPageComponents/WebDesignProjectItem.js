@@ -1,5 +1,4 @@
 import React from "react";
-// import "../Services-styles/WebDesignProjects.css";
 
 function WebDesignProjectItem({ imageURL, title, description }) {
 	return (
