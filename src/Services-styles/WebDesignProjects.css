@@ -8,8 +8,8 @@
 }
 
 .project-item {
-  -webkit-transition: 400ms ease-in;
-  transition: 400ms ease-in;
+  -webkit-transition: 400ms ease;
+  transition: 400ms ease;
 }
 
 .project-item:hover .project-info {
@@ -20,6 +20,10 @@
 .project-item:hover .project-title,
 .project-item:hover .project-description {
   color: white;
+}
+
+.project-image-wrapper {
+  height: 320px;
 }
 
 .project-image-wrapper img {
@@ -38,9 +42,9 @@
 }
 
 .project-title {
+  margin-bottom: 16px;
   color: #e7816b;
   text-transform: uppercase;
-  margin-bottom: 16px;
   -webkit-transition: 400ms ease-in;
   transition: 400ms ease-in;
 }
@@ -82,8 +86,6 @@
     border-radius: 15px 0 0 15px;
   }
   .project-info {
-    width: 50%;
-    border-radius: 0 15px 15px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -94,6 +96,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 50%;
+    border-radius: 0 15px 15px 0;
   }
 }
 
