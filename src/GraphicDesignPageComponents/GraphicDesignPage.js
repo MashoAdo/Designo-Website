@@ -11,6 +11,11 @@ import change from "../assets/graphic-design/desktop/image-change.jpg";
 import graphicDesignMobile from "../assets/home/mobile/image-app-design.jpg";
 import graphicDesignTablet from "../assets/home/tablet/image-app-design.jpg";
 import graphicDesignDesktop from "../assets/home/desktop/image-app-design.jpg";
+
+import webDesignMobile from "../assets/home/mobile/image-web-design.jpg";
+import webDesignTablet from "../assets/home/tablet/image-web-design.jpg";
+import webDesignDesktop from "../assets/home/desktop/image-web-design-large.jpg";
+
 // designo-webapp\src\assets\home\mobile\image-app-design.jpg
 import ServiceItem from "../homeComponents/ServiceItem";
 function GraphicDesignPage() {
@@ -39,6 +44,7 @@ function GraphicDesignPage() {
 
 			<div className="other-services">
 				<ServiceItem
+					path="/graphicDesign"
 					backgroundImageUrl={
 						screenWidth < 768
 							? graphicDesignMobile
@@ -50,14 +56,15 @@ function GraphicDesignPage() {
 				/>
 
 				<ServiceItem
+					path="/webDesign"
 					backgroundImageUrl={
 						screenWidth < 768
-							? graphicDesignMobile
+							? webDesignMobile
 							: screenWidth < 1200
-							? graphicDesignTablet
-							: graphicDesignDesktop
+							? webDesignTablet
+							: webDesignDesktop
 					}
-					name="Graphic Design"
+					name="Web Design"
 				/>
 			</div>
 		</div>
