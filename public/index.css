@@ -10,7 +10,8 @@ body {
 	font-family: "Jost", sans-serif;
 	font-size: 16px;
 	line-height: 26px;
-	/* position: relative; */
+	background: url("./bg-pattern-leaf.svg") 0 475px no-repeat,
+		url("./bg-pattern-leaf.svg") right 1600px no-repeat;
 }
 
 ul {
