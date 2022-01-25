@@ -1,7 +1,7 @@
 import React from "react";
 
 // project component
-import WebDesignProjectItem from "./WebDesignProjectItem.js.js";
+import WebDesignProjectItem from "./WebDesignProjectItem.js";
 
 // jpg files
 import express from "../assets/web-design/desktop/image-express.jpg";
@@ -27,7 +27,6 @@ import ServiceItem from "../homeComponents/ServiceItem";
 function WebDesignPage() {
 	let screenWidth = window.innerWidth;
 
-	console.log(screenWidth);
 	return (
 		<div className="web-design-page-container">
 			<WebDesignHero />
@@ -66,6 +65,7 @@ function WebDesignPage() {
 
 			<div className="other-services">
 				<ServiceItem
+					path="/appDesign"
 					backgroundImageUrl={
 						screenWidth < 768
 							? appDesignMobile
@@ -76,6 +76,7 @@ function WebDesignPage() {
 					name="App Design"
 				/>
 				<ServiceItem
+					path="/graphicDesign"
 					backgroundImageUrl={
 						screenWidth < 768
 							? graphicDesignMobile
