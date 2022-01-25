@@ -30,6 +30,7 @@ $light-peach: rgb(255, 173, 155);
 }
 
 .project-image-wrapper {
+	height: 320px;
 	img {
 		border-radius: 15px 15px 0 0;
 		height: 100%;
@@ -46,11 +47,12 @@ $light-peach: rgb(255, 173, 155);
 }
 
 .project-title {
+	margin-bottom: 16px;
 	color: #e7816b;
 	text-transform: uppercase;
-	margin-bottom: 16px;
 	transition: 400ms ease-in;
 }
+
 .project-description {
 	color: #333136;
 	transition: 400ms ease-in;
@@ -58,6 +60,7 @@ $light-peach: rgb(255, 173, 155);
 
 .other-services {
 	padding: 0 24px 286px;
+
 	:last-child {
 		margin-bottom: 0;
 	}
@@ -77,20 +80,20 @@ $light-peach: rgb(255, 173, 155);
 	.project-item {
 		display: flex;
 		flex-direction: row;
-		// height: 310px;
 	}
+
 	.project-image-wrapper {
 		img {
 			border-radius: 15px 0 0 15px;
 		}
 	}
+
 	.project-info {
-		width: 50%;
-		border-radius: 0 15px 15px 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		// align-items: center;
+		width: 50%;
+		border-radius: 0 15px 15px 0;
 	}
 }
 
@@ -100,10 +103,12 @@ $light-peach: rgb(255, 173, 155);
 		grid-template-columns: repeat(2, 1fr);
 		gap: 40px;
 	}
+
 	.project-item {
 		display: flex;
 		flex-direction: column;
 	}
+
 	.project-image-wrapper {
 		img {
 			border-radius: 15px 15px 0 0;
@@ -133,6 +138,7 @@ $light-peach: rgb(255, 173, 155);
 		grid-template-columns: repeat(3, 1fr);
 		gap: 30px;
 	}
+
 	.other-services {
 		padding: 0 95px 350px;
 	}
