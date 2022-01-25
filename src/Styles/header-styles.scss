@@ -6,6 +6,7 @@ $white: rgb(255, 255, 255);
 
 // Menu component scss
 .header-section {
+	// position: fixed;
 	width: 100%;
 	left: 0px;
 	top: 0px;
@@ -88,7 +89,7 @@ $white: rgb(255, 255, 255);
 
 nav {
 	background: $black;
-	position: fixed;
+	position: absolute;
 	left: 0;
 	right: 0;
 	// hides menu
