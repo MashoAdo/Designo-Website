@@ -16,6 +16,11 @@ import graphicDesignMobile from "../assets/home/mobile/image-graphic-design.jpg"
 import graphicDesignTablet from "../assets/home/tablet/image-graphic-design.jpg";
 import graphicDesignDesktop from "../assets/home/desktop/image-graphic-design.jpg";
 
+import webDesignMobile from "../assets/home/mobile/image-web-design.jpg";
+import webDesignTablet from "../assets/home/tablet/image-web-design.jpg";
+import webDesignDesktop from "../assets/home/desktop/image-web-design-large.jpg";
+// assets/home/mobile/image-web-design.jpg
+
 function AppDesignPage() {
 	let screenWidth = window.innerWidth;
 
@@ -52,17 +57,19 @@ function AppDesignPage() {
 
 			<div className="other-services">
 				<ServiceItem
+					path="/webDesign"
 					backgroundImageUrl={
 						screenWidth < 768
-							? graphicDesignMobile
+							? webDesignMobile
 							: screenWidth < 1200
-							? graphicDesignTablet
-							: graphicDesignDesktop
+							? webDesignTablet
+							: webDesignDesktop
 					}
-					name="Graphic Design"
+					name="Web Design"
 				/>
 
 				<ServiceItem
+					path="/graphicDesign"
 					backgroundImageUrl={
 						screenWidth < 768
 							? graphicDesignMobile
