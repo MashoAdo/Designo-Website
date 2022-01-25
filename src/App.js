@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// styles
-import "./App.css";
-
 // home page
 import Header from "./homeComponents/Header.js";
 import Hero from "./homeComponents/Hero";
