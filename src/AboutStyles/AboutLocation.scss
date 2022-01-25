@@ -1,0 +1,80 @@
+/* VARIABLES */
+
+// Primary Colors
+$peach: rgb(231, 120, 107);
+$white: rgb(255, 255, 255);
+
+// Secondary Colors
+$light-peach: rgb(255, 173, 155);
+
+// mixins
+@mixin button($textColor, $backgroundColor) {
+	font-family: Jost;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	padding: 18px 24px;
+	border: none;
+	border-radius: 8px;
+	transition: 400ms ease;
+
+	&:hover {
+		color: $textColor;
+		background: $backgroundColor;
+	}
+}
+
+// styles
+.about-location-container {
+	margin: 120px 13px;
+}
+.about-location-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.location-image-wrapper {
+	width: 202px;
+	height: 202px;
+	background-image: url("../assets/shared/desktop/bg-pattern-small-circle.svg");
+	margin-bottom: 48px;
+}
+
+.location-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	span {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 26px;
+		text-align: center;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		color: #333136;
+		margin-bottom: 32px;
+	}
+
+	button {
+		background-color: $peach;
+		color: $white;
+		@include button($white, $light-peach);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.about-location-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 95px;
+	}
+
+	.location-image-wrapper {
+		margin: 0;
+	}
+}

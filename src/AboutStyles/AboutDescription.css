@@ -1,0 +1,103 @@
+/* VARIABLES */
+.about-description-item:hover .about-description {
+  background-color: #fdf3f0;
+}
+
+.about-description-item:hover h2 {
+  color: #e7786b;
+}
+
+.about-description-item:hover p {
+  color: black;
+}
+
+.about-description-image-wrapper {
+  height: 320px;
+}
+
+.about-description-image-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+.about-description {
+  padding: 80px 24px;
+  background-color: #e7786b;
+  text-align: center;
+  color: white;
+  -webkit-transition: 400ms ease-in;
+  transition: 400ms ease-in;
+}
+
+.about-description h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 24px;
+  -webkit-transition: 400ms ease-in;
+  transition: 400ms ease-in;
+}
+
+.about-description p {
+  font-size: 15px;
+  line-height: 25px;
+  -webkit-transition: 400ms ease-in;
+  transition: 400ms ease-in;
+}
+
+@media screen and (min-width: 768px) {
+  .about-description-item {
+    margin: 0 40px;
+  }
+  .about-description-item img {
+    border-radius: 15px 15px 0 0;
+  }
+  .about-description {
+    padding: 64px 58px;
+    border-radius: 0 0 15px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-description-item {
+    height: 640px;
+    margin: 0 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-description-image-wrapper {
+    height: 100%;
+  }
+  .about-description-image-wrapper img {
+    border-radius: 15px 0 0 15px;
+  }
+  .about-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: start;
+    border-radius: 0 15px 15px 0;
+    width: 635px;
+  }
+  .about-description h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .about-description p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+/*# sourceMappingURL=AboutDescription.css.map */

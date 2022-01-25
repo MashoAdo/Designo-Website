@@ -1,0 +1,91 @@
+/* VARIABLES */
+.about-location-container {
+  margin: 120px 13px;
+}
+
+.about-location-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location-image-wrapper {
+  width: 202px;
+  height: 202px;
+  background-image: url("../assets/shared/desktop/bg-pattern-small-circle.svg");
+  margin-bottom: 48px;
+}
+
+.location-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location-info span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #333136;
+  margin-bottom: 32px;
+}
+
+.location-info button {
+  background-color: #e7786b;
+  color: white;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 8px;
+  -webkit-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.location-info button:hover {
+  color: white;
+  background: #ffad9b;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-location-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 95px;
+  }
+  .location-image-wrapper {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=AboutLocation.css.map */
