@@ -15,7 +15,6 @@ import appDesignDesktop from "../assets/home/desktop/image-app-design.jpg";
 import graphicDesignMobile from "../assets/home/mobile/image-graphic-design.jpg";
 import graphicDesignTablet from "../assets/home/tablet/image-graphic-design.jpg";
 import graphicDesignDesktop from "../assets/home/desktop/image-graphic-design.jpg";
-// import { Link } from "react-router-dom";
 
 function Services() {
 	// get windows screen width
