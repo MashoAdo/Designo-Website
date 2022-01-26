@@ -16,17 +16,17 @@ function FooterInformation() {
 				<div className="line-separator-one"></div>
 				<ul className="footer-links-container">
 					<li className="footer-link">
-						<a href="/about" rel="noreferrer">
+						<a href="/about" rel="noreferrer" rel="noreferrer">
 							OUR COMPANY
 						</a>
 					</li>
 					<li className="footer-link">
-						<a href="/locations" rel="noreferrer">
+						<a href="/locations" rel="noreferrer" rel="noreferrer">
 							LOCATIONS
 						</a>
 					</li>
 					<li className="footer-link">
-						<a href="/contact" rel="noreferrer">
+						<a href="/contact" rel="noreferrer" rel="noreferrer">
 							CONTACT
 						</a>
 					</li>
@@ -56,19 +56,19 @@ function FooterInformation() {
 					</div>
 				</div>
 				<div className="socials">
-					<a href="http://www.facebook.com/" target="_blank">
+					<a href="http://www.facebook.com/" target="_blank" rel="noreferrer">
 						<Facebook />
 					</a>
-					<a href="http://www.youtube.com/" target="_blank">
+					<a href="http://www.youtube.com/" target="_blank" rel="noreferrer">
 						<Youtube />
 					</a>
-					<a href="http://www.twitter.com/" target="_blank">
+					<a href="http://www.twitter.com/" target="_blank" rel="noreferrer">
 						<Twitter />
 					</a>
-					<a href="http://www.pinterest.com/" target="_blank">
+					<a href="http://www.pinterest.com/" target="_blank" rel="noreferrer">
 						<Pinterest />
 					</a>
-					<a href="http://www.instagram.com/" target="_blank">
+					<a href="http://www.instagram.com/" target="_blank" rel="noreferrer">
 						<Instagram />
 					</a>
 				</div>

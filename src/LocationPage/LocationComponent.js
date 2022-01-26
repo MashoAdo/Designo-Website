@@ -17,7 +17,7 @@ function LocationComponent({
 			style={{ flexDirection: flexDirection }}
 		>
 			<div className="map">
-				<img src={imageURL} />
+				<img src={imageURL} alt="map-img" />
 			</div>
 			<div className="location-details" style={{ margin: margin }}>
 				<h2> {country} </h2>

@@ -2,7 +2,6 @@ import React from "react";
 
 // styles
 import "../ContactStyles/ContactCard.css";
-import { ReactComponent as ErrorComponent } from "../assets/contact/desktop/icon-error.svg";
 
 function ContactCard() {
 	return (
