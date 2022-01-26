@@ -2,8 +2,6 @@ import React from "react";
 import "../Styles/services.css";
 import { ReactComponent as RightIcon } from "../assets/shared/desktop/icon-right-arrow.svg";
 
-// import { Link } from "react-router-dom";
-
 function ServiceItem({ name, backgroundImageUrl, path }) {
 	return (
 		<a href={path}>

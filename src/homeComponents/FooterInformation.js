@@ -16,19 +16,13 @@ function FooterInformation() {
 				<div className="line-separator-one"></div>
 				<ul className="footer-links-container">
 					<li className="footer-link">
-						<a href="/about" rel="noreferrer" rel="noreferrer">
-							OUR COMPANY
-						</a>
+						<a href="/about">OUR COMPANY</a>
 					</li>
 					<li className="footer-link">
-						<a href="/locations" rel="noreferrer" rel="noreferrer">
-							LOCATIONS
-						</a>
+						<a href="/locations">LOCATIONS</a>
 					</li>
 					<li className="footer-link">
-						<a href="/contact" rel="noreferrer" rel="noreferrer">
-							CONTACT
-						</a>
+						<a href="/contact">CONTACT</a>
 					</li>
 				</ul>
 			</div>
