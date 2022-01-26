@@ -1,0 +1,91 @@
+.call-to-action-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -190px;
+  padding: 64px 24px;
+  margin: 0 24px;
+  background: #e7786b url("../assets/shared/desktop/bg-pattern-call-to-action.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.cta-button {
+  color: #1d1c1e;
+  background-color: white;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 8px;
+  -webkit-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.cta-button:hover {
+  color: white;
+  background: #ffad9b;
+}
+
+.call-to-action {
+  margin-bottom: 32px;
+  color: white;
+}
+
+.call-to-action h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+.call-to-action p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 650px) {
+  .call-to-action-container {
+    margin: 0 40px;
+    padding: 57px 59px;
+    text-align: center;
+  }
+  .call-to-action-container h3 .line-breaker::after {
+    content: "\a";
+    white-space: pre;
+  }
+  .call-to-action-container p .line-breaker::after {
+    content: "\a";
+    white-space: pre;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .call-to-action-container {
+    margin: 0 95px;
+  }
+  .call-to-action-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: start;
+  }
+}
+/*# sourceMappingURL=callToAction.css.map */

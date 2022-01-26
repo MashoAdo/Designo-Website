@@ -1,0 +1,103 @@
+/* VARIABLES */
+.hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #e7786b url("../assets/home/desktop/bg-pattern-hero-home.svg");
+  background-repeat: no-repeat;
+}
+
+.hero-section .light-button {
+  margin: 24px 0 80px;
+  background-color: white;
+  color: #1d1c1e;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 8px;
+  -webkit-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.hero-section .light-button:hover {
+  color: white;
+  background: #ffad9b;
+}
+
+.hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-content {
+  color: white;
+  text-align: center;
+  margin: 80px 24px 0;
+}
+
+.hero-header {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 650px) {
+  .hero-section {
+    margin: 0 40px 0;
+    border-radius: 8px;
+  }
+  .hero-content {
+    margin: 60px 58px 0;
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    background-position: 100% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 145px 95px 0;
+    margin: 0 95px 0;
+  }
+  .hero-container {
+    width: 50%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .hero-content {
+    padding: 0;
+    margin: 0;
+    text-align: start;
+  }
+}
+/*# sourceMappingURL=hero-styles.css.map */
