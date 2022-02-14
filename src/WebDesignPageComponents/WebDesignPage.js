@@ -30,6 +30,7 @@ function WebDesignPage() {
 	return (
 		<div className="web-design-page-container">
 			<WebDesignHero />
+
 			<div className="project-container">
 				<WebDesignProjectItem
 					imageURL={express}
